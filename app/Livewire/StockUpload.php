@@ -68,6 +68,9 @@ class StockUpload extends Component
         }
 
         $this->uploading = false;
+
+        // reload the page
+        return redirect()->route('dashboard');
     }
 
     public function render()
