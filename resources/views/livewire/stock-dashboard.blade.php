@@ -94,14 +94,14 @@
                                         {{ $performer['stock'] }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                        ${{ number_format($performer['first_price'], 2) }}
+                                        KSh. {{ number_format($performer['first_price'], 2) }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                        ${{ number_format($performer['last_price'], 2) }}
+                                        KSh. {{ number_format($performer['last_price'], 2) }}
                                     </td>
                                     <td
                                         class="px-6 py-4 whitespace-nowrap text-sm font-semibold {{ $performer['price_gain'] >= 0 ? 'text-green-600' : 'text-red-600' }}">
-                                        ${{ number_format($performer['price_gain'], 2) }}
+                                        KSh. {{ number_format($performer['price_gain'], 2) }}
                                     </td>
                                     <td
                                         class="px-6 py-4 whitespace-nowrap text-sm font-semibold {{ $performer['percent_gain'] >= 0 ? 'text-green-600' : 'text-red-600' }}">
@@ -169,11 +169,11 @@
                             },
                             yaxis: {
                                 title: {
-                                    text: 'Price ($)'
+                                    text: 'Price (KSh)'
                                 },
                                 labels: {
                                     formatter: function(val) {
-                                        return '$' + val.toFixed(2);
+                                        return 'KSh' + val.toFixed(2);
                                     }
                                 }
                             },
