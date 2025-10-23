@@ -78,10 +78,10 @@
 <body class="bg-blue-100 flex flex-col items-center justify-center min-h-screen">
 
 
-    <!-- Logo -->
+    {{-- <!-- Logo -->
     <div class="p-3 border-b border-gray-200">
         <img src="{{ URL::asset('images/Logo-3.png') }}" alt="logo" class="h-16 object-contain">
-    </div>
+    </div> --}}
 
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
 
